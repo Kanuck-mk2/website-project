@@ -110,7 +110,7 @@ p {
 
 .dropdown:hover .dropdown-content {
   background-color: hsl(0, 1%, 16%);
-  max-height: 18.75rem; /* 300px converted to REM */
+  max-height: 19.75rem; /* 300px converted to REM */
   max-width: 12.5rem; /* 100px converted to REM */
   opacity: 0.9;
   visibility: visible;
@@ -127,8 +127,6 @@ p {
   width: 20rem;
   height: auto;
   box-sizing: border-box;
-  
-  
 }
 
 #text-container {
@@ -140,7 +138,6 @@ p {
   box-sizing: border-box;
   position: relative;
 
-  
   flex-direction: column;
 }
 

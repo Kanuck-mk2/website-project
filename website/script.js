@@ -20,9 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 function loadContent(page) {
+  console.log('loading content for page:', page);
 
-  console.log("loading content for page:", page);
-  
   let xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4) {
@@ -30,7 +29,7 @@ function loadContent(page) {
         let tempDiv = document.createElement('div');
         tempDiv.innerHTML = this.responseText;
 
-        let mainContent = tempDiv.getElementById('#main-content');
+        let mainContent = tempDiv.querySelector('#main-content');
 
         if (mainContent) {
           document.getElementById('main-container').innerHTML =
