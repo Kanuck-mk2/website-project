@@ -117,9 +117,11 @@ p {
 }
 
 #main-container {
+  border: 2px solid hsl(0, 0%, 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 1rem;
 }
 
 #image-container {
@@ -159,4 +161,25 @@ p {
 
 hr {
   width: 0px;
+}
+
+.footer {
+  /* ... (existing styles) */
+  width: 100%; /* Use full width of the container */
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box;
+  justify-content: space-between; /* Align items in a row with space between */
+  align-items: center;
+  background-color: hsl(0, 4%, 17%);
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  text-align: center;
+  /* ... (existing styles) */
+  width: 100%; /* Use full width of the container */
+}
+
+#about-container {
+  border: 1px solid hsl(0, 0%, 100%);
 }
