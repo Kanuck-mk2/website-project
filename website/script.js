@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 500);
 
   // Fix typos in the following lines
-  const footerContent = document.getElementById('footer-content');
+  const footerContent = document.getElementById("footer-content");
   const currentYear = new Date().getFullYear();
   footerContent.textContent += `©Kanuck Studios ${currentYear}`;
 });
