@@ -73,6 +73,7 @@ p {
 .navbar {
   border: 1px solid hsl(0, 1%, 16%);
   background: hsl(0, 3%, 15%);
+ 
   font-size: 1.5rem;
 }
 
@@ -92,9 +93,12 @@ p {
 .navbar a {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
+  transition: color 0.3s, text-decoration 0.3s;
 }
 .navbar a:hover {
-  color: hsl(41, 87%, 49%);
+  color: hsl(31, 35%, 37%);
+  text-decoration: underline  hsl(31, 35%, 37%);
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -119,15 +123,20 @@ p {
 
 .dropdown-content a:hover {
   background-color: hsl(0, 4%, 26%);
-  color: hsl(41, 87%, 49%);
+  color: hsl(31, 42%, 55%);
+
+  cursor: pointer;
 }
 
 .dropdown:hover .dropdown-content {
   background-color: hsl(0, 1%, 16%);
+  background-image: url("./images/bulb-rope.png");
+  background-size: cover;
   max-height: 19.75rem; /* 300px converted to REM */
   max-width: 12.5rem; /* 100px converted to REM */
   opacity: 0.9;
   visibility: visible;
+  cursor: pointer;
 }
 
 #main-container {
@@ -143,18 +152,24 @@ p {
   display: flex;
 }
 
-#image-container {
+#image-gallery {
   width: 35%;
   height: auto;
   box-sizing: border-box;
   margin-right: 10rem;
   margin-bottom: 1rem;
 }
-.main-image {
-  width: 600px;
+.img-main {
+  width: 120%;
   height: 100%;
   border: 2px solid hsl(0, 2%, 41%);
   border-radius: 5px;
+}
+#next-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background: hsl(0, 22%, 71%);
 }
 
 #text-container {
@@ -197,8 +212,12 @@ hr {
 
 .footer {
   /* ... (existing styles) */
+  
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
   width: 100%; /* Use full width of the container */
-  height: max-content;
+  height: auto;
   padding: 20px; /* Adjust padding as needed */
   box-sizing: border-box;
   justify-content: space-between; /* Align items in a row with space between */
@@ -207,6 +226,7 @@ hr {
   color: hsl(0, 0%, 100%);
   position: relative;
   bottom: 0;
+  
 }
 
 footer {

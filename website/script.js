@@ -1,6 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
   document.body.style.opacity = 1;
 
+  const galleryImages = document.querySelectorAll('.img-main');
+  let currentImageIndex = 0;
+
+  function showCurrentImage() {
+    galleryImages.forEach((images, index) => {
+      images.style.display = index === currentImageIndex ? 'block' : 'none';
+    });
+  }
+
+  document.getElementById('next-btn').addEventListener('click', function () {
+    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    showCurrentImage();
+  });
+
+  showCurrentImage();
+
   const header = document.querySelector('header');
 
   // Check if the header has not already been faded in
@@ -24,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 500);
 
   // Fix typos in the following lines
-  const footerContent = document.getElementById("footer-content");
+  const footerContent = document.getElementById('footer-content');
   const currentYear = new Date().getFullYear();
   footerContent.textContent += `©Kanuck Studios ${currentYear}`;
 });
