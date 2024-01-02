@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Remove the fade-in class after a delay (e.g., 2000 milliseconds)
       setTimeout(function () {
         header.classList.remove('fade-in');
-      }, 100);
+      }, 1000);
     }, 100);
   }
 

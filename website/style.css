@@ -252,8 +252,8 @@ footer {
   height: 31.25rem; /* 500px converted to REM */
   box-sizing: border-box;
   position: relative;
-  margin-left: 10rem;
-  margin-bottom: 1rem;
+  margin-left: 20rem;
+  margin-top: 0.2rem;
   line-height: 1.5;
   text-align: justify;
   font-size: 1rem;
